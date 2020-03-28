@@ -2,7 +2,7 @@
 
 <p>
   <strong>File:</strong>
-  <%= @image.file %>
+  <%= image_tag @image.file_url %>
 </p>
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
