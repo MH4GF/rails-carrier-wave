@@ -6,6 +6,7 @@ default: &default
   username: <%= ENV['APP_DATABASE_USER'] %>
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>
   database: <%= ENV['APP_DATABASE_NAME'] %>
+  port: <%= ENV.fetch('APP_DATABASE_PORT') { 3306 } %>
 
 development:
   <<: *default
